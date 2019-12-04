@@ -124,7 +124,7 @@ public class SessionController extends HttpServlet {
                 Cookie ck[] = request.getCookies();
                 String nombreProductor = "";
                 for (int i = 0; i < ck.length; i++) {
-                    if (ck[i].getName().equals("productor")) {
+                    if (ck[i].getName().equals("nombreProductor")) {
                         nombreProductor = ck[i].getValue();
                         System.out.println("Cookie: " + ck[i]);
                     }
@@ -140,7 +140,7 @@ public class SessionController extends HttpServlet {
                 Cookie ck1[] = request.getCookies();
                 String nombreProductor1 = "";
                 for (int i = 0; i < ck1.length; i++) {
-                    if (ck1[i].getName().equals("productor")) {
+                    if (ck1[i].getName().equals("nombreProductor")) {
                         nombreProductor1 = ck1[i].getValue();
                         System.out.println("Cookie: " + ck1[i]);
                     }
